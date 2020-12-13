@@ -6,5 +6,5 @@ C_FLAGS = -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fsta
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/cortey/Documents/GitHub/assignment-5/http_src -I/Users/cortey/Documents/GitHub/assignment-5/thpool_src 
+C_INCLUDES = -I/Users/cortey/Documents/GitHub/AnHTTPServer/http_src -I/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src 
 

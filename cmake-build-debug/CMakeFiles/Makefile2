@@ -64,10 +64,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cortey/Documents/GitHub/assignment-5
+CMAKE_SOURCE_DIR = /Users/cortey/Documents/GitHub/AnHTTPServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -96,14 +96,14 @@ clean: CMakeFiles/http_server.dir/clean
 CMakeFiles/thpool_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thpool_example.dir/build.make CMakeFiles/thpool_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thpool_example.dir/build.make CMakeFiles/thpool_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=14,15,16 "Built target thpool_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=14,15,16 "Built target thpool_example"
 .PHONY : CMakeFiles/thpool_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/thpool_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/thpool_example.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/thpool_example.dir/rule
 
 # Convenience name for target.
@@ -123,14 +123,14 @@ CMakeFiles/thpool_example.dir/clean:
 CMakeFiles/http_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target http_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target http_server"
 .PHONY : CMakeFiles/http_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/http_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/http_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/http_server.dir/rule
 
 # Convenience name for target.

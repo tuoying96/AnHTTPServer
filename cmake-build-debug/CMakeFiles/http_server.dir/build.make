@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cortey/Documents/GitHub/assignment-5
+CMAKE_SOURCE_DIR = /Users/cortey/Documents/GitHub/AnHTTPServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/http_server.dir/depend.make
@@ -79,159 +79,159 @@ include CMakeFiles/http_server.dir/flags.make
 
 CMakeFiles/http_server.dir/http_src/file_util.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/file_util.c.o: ../http_src/file_util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/http_server.dir/http_src/file_util.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/file_util.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/file_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/http_server.dir/http_src/file_util.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/file_util.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/file_util.c
 
 CMakeFiles/http_server.dir/http_src/file_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/file_util.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/file_util.c > CMakeFiles/http_server.dir/http_src/file_util.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/file_util.c > CMakeFiles/http_server.dir/http_src/file_util.c.i
 
 CMakeFiles/http_server.dir/http_src/file_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/file_util.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/file_util.c -o CMakeFiles/http_server.dir/http_src/file_util.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/file_util.c -o CMakeFiles/http_server.dir/http_src/file_util.c.s
 
 CMakeFiles/http_server.dir/http_src/http_codes.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/http_codes.c.o: ../http_src/http_codes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/http_server.dir/http_src/http_codes.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_codes.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/http_codes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/http_server.dir/http_src/http_codes.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_codes.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_codes.c
 
 CMakeFiles/http_server.dir/http_src/http_codes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/http_codes.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/http_codes.c > CMakeFiles/http_server.dir/http_src/http_codes.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_codes.c > CMakeFiles/http_server.dir/http_src/http_codes.c.i
 
 CMakeFiles/http_server.dir/http_src/http_codes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/http_codes.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/http_codes.c -o CMakeFiles/http_server.dir/http_src/http_codes.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_codes.c -o CMakeFiles/http_server.dir/http_src/http_codes.c.s
 
 CMakeFiles/http_server.dir/http_src/http_methods.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/http_methods.c.o: ../http_src/http_methods.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/http_server.dir/http_src/http_methods.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_methods.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/http_methods.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/http_server.dir/http_src/http_methods.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_methods.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_methods.c
 
 CMakeFiles/http_server.dir/http_src/http_methods.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/http_methods.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/http_methods.c > CMakeFiles/http_server.dir/http_src/http_methods.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_methods.c > CMakeFiles/http_server.dir/http_src/http_methods.c.i
 
 CMakeFiles/http_server.dir/http_src/http_methods.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/http_methods.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/http_methods.c -o CMakeFiles/http_server.dir/http_src/http_methods.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_methods.c -o CMakeFiles/http_server.dir/http_src/http_methods.c.s
 
 CMakeFiles/http_server.dir/http_src/http_request.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/http_request.c.o: ../http_src/http_request.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/http_server.dir/http_src/http_request.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_request.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/http_request.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/http_server.dir/http_src/http_request.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_request.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_request.c
 
 CMakeFiles/http_server.dir/http_src/http_request.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/http_request.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/http_request.c > CMakeFiles/http_server.dir/http_src/http_request.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_request.c > CMakeFiles/http_server.dir/http_src/http_request.c.i
 
 CMakeFiles/http_server.dir/http_src/http_request.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/http_request.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/http_request.c -o CMakeFiles/http_server.dir/http_src/http_request.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_request.c -o CMakeFiles/http_server.dir/http_src/http_request.c.s
 
 CMakeFiles/http_server.dir/http_src/http_server.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/http_server.c.o: ../http_src/http_server.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/http_server.dir/http_src/http_server.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_server.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/http_server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/http_server.dir/http_src/http_server.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_server.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_server.c
 
 CMakeFiles/http_server.dir/http_src/http_server.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/http_server.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/http_server.c > CMakeFiles/http_server.dir/http_src/http_server.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_server.c > CMakeFiles/http_server.dir/http_src/http_server.c.i
 
 CMakeFiles/http_server.dir/http_src/http_server.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/http_server.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/http_server.c -o CMakeFiles/http_server.dir/http_src/http_server.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_server.c -o CMakeFiles/http_server.dir/http_src/http_server.c.s
 
 CMakeFiles/http_server.dir/http_src/http_util.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/http_util.c.o: ../http_src/http_util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/http_server.dir/http_src/http_util.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_util.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/http_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/http_server.dir/http_src/http_util.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/http_util.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_util.c
 
 CMakeFiles/http_server.dir/http_src/http_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/http_util.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/http_util.c > CMakeFiles/http_server.dir/http_src/http_util.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_util.c > CMakeFiles/http_server.dir/http_src/http_util.c.i
 
 CMakeFiles/http_server.dir/http_src/http_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/http_util.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/http_util.c -o CMakeFiles/http_server.dir/http_src/http_util.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_util.c -o CMakeFiles/http_server.dir/http_src/http_util.c.s
 
 CMakeFiles/http_server.dir/http_src/media_util.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/media_util.c.o: ../http_src/media_util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/http_server.dir/http_src/media_util.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/media_util.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/media_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/http_server.dir/http_src/media_util.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/media_util.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/media_util.c
 
 CMakeFiles/http_server.dir/http_src/media_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/media_util.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/media_util.c > CMakeFiles/http_server.dir/http_src/media_util.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/media_util.c > CMakeFiles/http_server.dir/http_src/media_util.c.i
 
 CMakeFiles/http_server.dir/http_src/media_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/media_util.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/media_util.c -o CMakeFiles/http_server.dir/http_src/media_util.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/media_util.c -o CMakeFiles/http_server.dir/http_src/media_util.c.s
 
 CMakeFiles/http_server.dir/http_src/network_util.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/network_util.c.o: ../http_src/network_util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/http_server.dir/http_src/network_util.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/network_util.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/network_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/http_server.dir/http_src/network_util.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/network_util.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/network_util.c
 
 CMakeFiles/http_server.dir/http_src/network_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/network_util.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/network_util.c > CMakeFiles/http_server.dir/http_src/network_util.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/network_util.c > CMakeFiles/http_server.dir/http_src/network_util.c.i
 
 CMakeFiles/http_server.dir/http_src/network_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/network_util.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/network_util.c -o CMakeFiles/http_server.dir/http_src/network_util.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/network_util.c -o CMakeFiles/http_server.dir/http_src/network_util.c.s
 
 CMakeFiles/http_server.dir/http_src/properties.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/properties.c.o: ../http_src/properties.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/http_server.dir/http_src/properties.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/properties.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/properties.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/http_server.dir/http_src/properties.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/properties.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/properties.c
 
 CMakeFiles/http_server.dir/http_src/properties.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/properties.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/properties.c > CMakeFiles/http_server.dir/http_src/properties.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/properties.c > CMakeFiles/http_server.dir/http_src/properties.c.i
 
 CMakeFiles/http_server.dir/http_src/properties.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/properties.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/properties.c -o CMakeFiles/http_server.dir/http_src/properties.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/properties.c -o CMakeFiles/http_server.dir/http_src/properties.c.s
 
 CMakeFiles/http_server.dir/http_src/string_util.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/string_util.c.o: ../http_src/string_util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/http_server.dir/http_src/string_util.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/string_util.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/string_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/http_server.dir/http_src/string_util.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/string_util.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/string_util.c
 
 CMakeFiles/http_server.dir/http_src/string_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/string_util.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/string_util.c > CMakeFiles/http_server.dir/http_src/string_util.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/string_util.c > CMakeFiles/http_server.dir/http_src/string_util.c.i
 
 CMakeFiles/http_server.dir/http_src/string_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/string_util.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/string_util.c -o CMakeFiles/http_server.dir/http_src/string_util.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/string_util.c -o CMakeFiles/http_server.dir/http_src/string_util.c.s
 
 CMakeFiles/http_server.dir/http_src/time_util.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/time_util.c.o: ../http_src/time_util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/http_server.dir/http_src/time_util.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/time_util.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/time_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/http_server.dir/http_src/time_util.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/time_util.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/time_util.c
 
 CMakeFiles/http_server.dir/http_src/time_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/time_util.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/time_util.c > CMakeFiles/http_server.dir/http_src/time_util.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/time_util.c > CMakeFiles/http_server.dir/http_src/time_util.c.i
 
 CMakeFiles/http_server.dir/http_src/time_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/time_util.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/time_util.c -o CMakeFiles/http_server.dir/http_src/time_util.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/time_util.c -o CMakeFiles/http_server.dir/http_src/time_util.c.s
 
 CMakeFiles/http_server.dir/http_src/varray.c.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/http_src/varray.c.o: ../http_src/varray.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/http_server.dir/http_src/varray.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/varray.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/http_src/varray.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/http_server.dir/http_src/varray.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/http_server.dir/http_src/varray.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/varray.c
 
 CMakeFiles/http_server.dir/http_src/varray.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http_server.dir/http_src/varray.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/http_src/varray.c > CMakeFiles/http_server.dir/http_src/varray.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/varray.c > CMakeFiles/http_server.dir/http_src/varray.c.i
 
 CMakeFiles/http_server.dir/http_src/varray.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http_server.dir/http_src/varray.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/http_src/varray.c -o CMakeFiles/http_server.dir/http_src/varray.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/http_src/varray.c -o CMakeFiles/http_server.dir/http_src/varray.c.s
 
 # Object files for target http_server
 http_server_OBJECTS = \
@@ -265,7 +265,7 @@ http_server: CMakeFiles/http_server.dir/http_src/time_util.c.o
 http_server: CMakeFiles/http_server.dir/http_src/varray.c.o
 http_server: CMakeFiles/http_server.dir/build.make
 http_server: CMakeFiles/http_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable http_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable http_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/http_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -278,6 +278,6 @@ CMakeFiles/http_server.dir/clean:
 .PHONY : CMakeFiles/http_server.dir/clean
 
 CMakeFiles/http_server.dir/depend:
-	cd /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/cortey/Documents/GitHub/assignment-5 /Users/cortey/Documents/GitHub/assignment-5 /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/cortey/Documents/GitHub/AnHTTPServer /Users/cortey/Documents/GitHub/AnHTTPServer /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/http_server.dir/depend
 
