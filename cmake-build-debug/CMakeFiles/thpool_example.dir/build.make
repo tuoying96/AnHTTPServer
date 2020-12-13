@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cortey/Documents/GitHub/assignment-5
+CMAKE_SOURCE_DIR = /Users/cortey/Documents/GitHub/AnHTTPServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/thpool_example.dir/depend.make
@@ -79,29 +79,29 @@ include CMakeFiles/thpool_example.dir/flags.make
 
 CMakeFiles/thpool_example.dir/thpool_src/example.c.o: CMakeFiles/thpool_example.dir/flags.make
 CMakeFiles/thpool_example.dir/thpool_src/example.c.o: ../thpool_src/example.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/thpool_example.dir/thpool_src/example.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/thpool_example.dir/thpool_src/example.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/thpool_src/example.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/thpool_example.dir/thpool_src/example.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/thpool_example.dir/thpool_src/example.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/example.c
 
 CMakeFiles/thpool_example.dir/thpool_src/example.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/thpool_example.dir/thpool_src/example.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/thpool_src/example.c > CMakeFiles/thpool_example.dir/thpool_src/example.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/example.c > CMakeFiles/thpool_example.dir/thpool_src/example.c.i
 
 CMakeFiles/thpool_example.dir/thpool_src/example.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/thpool_example.dir/thpool_src/example.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/thpool_src/example.c -o CMakeFiles/thpool_example.dir/thpool_src/example.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/example.c -o CMakeFiles/thpool_example.dir/thpool_src/example.c.s
 
 CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o: CMakeFiles/thpool_example.dir/flags.make
 CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o: ../thpool_src/thpool.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o   -c /Users/cortey/Documents/GitHub/assignment-5/thpool_src/thpool.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o   -c /Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/thpool.c
 
 CMakeFiles/thpool_example.dir/thpool_src/thpool.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/thpool_example.dir/thpool_src/thpool.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/assignment-5/thpool_src/thpool.c > CMakeFiles/thpool_example.dir/thpool_src/thpool.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/thpool.c > CMakeFiles/thpool_example.dir/thpool_src/thpool.c.i
 
 CMakeFiles/thpool_example.dir/thpool_src/thpool.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/thpool_example.dir/thpool_src/thpool.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/assignment-5/thpool_src/thpool.c -o CMakeFiles/thpool_example.dir/thpool_src/thpool.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/thpool.c -o CMakeFiles/thpool_example.dir/thpool_src/thpool.c.s
 
 # Object files for target thpool_example
 thpool_example_OBJECTS = \
@@ -115,7 +115,7 @@ thpool_example: CMakeFiles/thpool_example.dir/thpool_src/example.c.o
 thpool_example: CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o
 thpool_example: CMakeFiles/thpool_example.dir/build.make
 thpool_example: CMakeFiles/thpool_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable thpool_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable thpool_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/thpool_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/thpool_example.dir/clean:
 .PHONY : CMakeFiles/thpool_example.dir/clean
 
 CMakeFiles/thpool_example.dir/depend:
-	cd /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/cortey/Documents/GitHub/assignment-5 /Users/cortey/Documents/GitHub/assignment-5 /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug /Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/thpool_example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/cortey/Documents/GitHub/AnHTTPServer /Users/cortey/Documents/GitHub/AnHTTPServer /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/thpool_example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/thpool_example.dir/depend
 

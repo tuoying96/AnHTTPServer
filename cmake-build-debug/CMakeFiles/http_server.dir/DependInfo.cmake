@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/file_util.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/file_util.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/http_codes.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_codes.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/http_methods.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_methods.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/http_request.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_request.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/http_server.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_server.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/http_util.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_util.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/media_util.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/media_util.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/network_util.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/network_util.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/properties.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/properties.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/string_util.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/string_util.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/time_util.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/time_util.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/http_src/varray.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/http_server.dir/http_src/varray.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/file_util.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/file_util.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_codes.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_codes.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_methods.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_methods.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_request.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_request.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_server.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_server.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_util.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/http_util.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/media_util.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/media_util.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/network_util.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/network_util.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/properties.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/properties.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/string_util.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/string_util.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/time_util.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/time_util.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/varray.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/http_server.dir/http_src/varray.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

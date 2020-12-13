@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/cortey/Documents/GitHub/assignment-5/thpool_src/example.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/thpool_example.dir/thpool_src/example.c.o"
-  "/Users/cortey/Documents/GitHub/assignment-5/thpool_src/thpool.c" "/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/example.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/thpool_example.dir/thpool_src/example.c.o"
+  "/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/thpool.c" "/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

@@ -8,44 +8,44 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug"/>
+				<Option working_dir="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug"/>
+				<Option working_dir="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug"/>
+				<Option working_dir="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="thpool_example">
-				<Option output="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/thpool_example" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug"/>
+				<Option output="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/thpool_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/cortey/Documents/GitHub/assignment-5/http_src"/>
-					<Add directory="/Users/cortey/Documents/GitHub/assignment-5/thpool_src"/>
+					<Add directory="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src"/>
+					<Add directory="/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -53,21 +53,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 thpool_example"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 thpool_example"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="thpool_example/fast">
-				<Option output="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/thpool_example" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug"/>
+				<Option output="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/thpool_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/cortey/Documents/GitHub/assignment-5/http_src"/>
-					<Add directory="/Users/cortey/Documents/GitHub/assignment-5/thpool_src"/>
+					<Add directory="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src"/>
+					<Add directory="/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -75,21 +75,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 thpool_example/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 thpool_example/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="http_server">
-				<Option output="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/http_server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug"/>
+				<Option output="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/http_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/cortey/Documents/GitHub/assignment-5/http_src"/>
-					<Add directory="/Users/cortey/Documents/GitHub/assignment-5/thpool_src"/>
+					<Add directory="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src"/>
+					<Add directory="/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -97,21 +97,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 http_server"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 http_server"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="http_server/fast">
-				<Option output="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/http_server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug"/>
+				<Option output="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/http_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/cortey/Documents/GitHub/assignment-5/http_src"/>
-					<Add directory="/Users/cortey/Documents/GitHub/assignment-5/thpool_src"/>
+					<Add directory="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src"/>
+					<Add directory="/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -119,95 +119,95 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 http_server/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/assignment-5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 http_server/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/file_util.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/file_util.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/file_util.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/file_util.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_codes.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_codes.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_codes.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_codes.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_methods.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_methods.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_methods.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_methods.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_request.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_request.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_request.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_request.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_server.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_server.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_server.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_server.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_util.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_util.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/http_util.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/http_util.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/media_util.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/media_util.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/media_util.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/media_util.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/network_util.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/network_util.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/network_util.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/network_util.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/properties.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/properties.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/properties.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/properties.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/string_util.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/string_util.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/string_util.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/string_util.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/time_util.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/time_util.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/time_util.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/time_util.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/varray.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/varray.c">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/http_src/varray.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/http_src/varray.h">
 			<Option target="http_server"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/thpool_src/example.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/example.c">
 			<Option target="thpool_example"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/thpool_src/thpool.c">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/thpool.c">
 			<Option target="thpool_example"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/thpool_src/thpool.h">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/thpool.h">
 			<Option target="thpool_example"/>
 		</Unit>
-		<Unit filename="/Users/cortey/Documents/GitHub/assignment-5/CMakeLists.txt">
+		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
