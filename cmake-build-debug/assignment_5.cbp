@@ -203,9 +203,11 @@
 		</Unit>
 		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/thpool.c">
 			<Option target="thpool_example"/>
+			<Option target="http_server"/>
 		</Unit>
 		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/thpool_src/thpool.h">
 			<Option target="thpool_example"/>
+			<Option target="http_server"/>
 		</Unit>
 		<Unit filename="/Users/cortey/Documents/GitHub/AnHTTPServer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

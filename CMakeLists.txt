@@ -13,7 +13,7 @@ aux_source_directory(thpool_src thpool_src)
 
 # build http server
 # add_executable(http_server ${http_src})
-add_executable(http_server ${http_src} thpool_scr/thpool.c)
+add_executable(http_server ${http_src} thpool_src/thpool.c)
 target_link_libraries(http_server z)
 
 # build thread pool example

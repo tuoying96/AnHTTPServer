@@ -1,16 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_CXX_COMPILER=/Library/Developer/CommandLineTools/usr/bin/c++ -G "CodeBlocks - Unix Makefiles" /Users/cortey/Documents/GitHub/AnHTTPServer
 -- Configuring done
-CMake Error at CMakeLists.txt:16 (add_executable):
-  Cannot find source file:
-
-    thpool_scr/thpool.c
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
-  .hpp .hxx .in .txx
-
-
-CMake Error at CMakeLists.txt:16 (add_executable):
-  No SOURCES given to target: http_server
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: /Users/cortey/Documents/GitHub/AnHTTPServer/cmake-build-debug

@@ -514,6 +514,7 @@ thpool_src/thpool.o: thpool_src/thpool.c.o
 # target to build an object file
 thpool_src/thpool.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thpool_example.dir/build.make CMakeFiles/thpool_example.dir/thpool_src/thpool.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/thpool_src/thpool.c.o
 .PHONY : thpool_src/thpool.c.o
 
 thpool_src/thpool.i: thpool_src/thpool.c.i
@@ -523,6 +524,7 @@ thpool_src/thpool.i: thpool_src/thpool.c.i
 # target to preprocess a source file
 thpool_src/thpool.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thpool_example.dir/build.make CMakeFiles/thpool_example.dir/thpool_src/thpool.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/thpool_src/thpool.c.i
 .PHONY : thpool_src/thpool.c.i
 
 thpool_src/thpool.s: thpool_src/thpool.c.s
@@ -532,6 +534,7 @@ thpool_src/thpool.s: thpool_src/thpool.c.s
 # target to generate assembly for a file
 thpool_src/thpool.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thpool_example.dir/build.make CMakeFiles/thpool_example.dir/thpool_src/thpool.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/thpool_src/thpool.c.s
 .PHONY : thpool_src/thpool.c.s
 
 # Help Target
