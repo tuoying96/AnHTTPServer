@@ -19,11 +19,13 @@
 #include "network_util.h"
 #include "properties.h"
 #include "http_server.h"
+#include "media_util.h"
 
 #define DEFAULT_HTTP_PORT 8080
 
 /** http server configuration */
 struct http_server_conf server;
+Properties* mediaTypeProperty;
 
 
 /**
@@ -68,7 +70,20 @@ static bool process_config(const char* configFileName) {
 				break;
 			}
 		}
-
+        char mediaTypeConfigFile[MAX_PROP_VAL];
+        mediaTypeProperty = NULL;
+        int entries;
+        if (findProperty(httpConfig, 0, "ContentTypes", mediaTypeConfigFile) != SIZE_MAX) {
+            entries = readMediaTypes(mediaTypeConfigFile);
+        }
+        else {
+            entries = readMediaTypes("mime.types");
+        }
+        if (entries == 0) {
+            status = false;
+            break;
+        }
+        storeProperties("mime.type.test", mediaTypeProperty);
 		// initialize the listener port
 		server.server_port = DEFAULT_HTTP_PORT;
 		char listenProp[MAX_PROP_VAL];
@@ -158,6 +173,8 @@ int main(int argc, char* argv[argc]) {
 
     // close listener socket
     close(listen_sock_fd);
+	if (mediaTypeProperty != NULL)
+	    deleteProperties(mediaTypeProperty);
     return EXIT_SUCCESS;
 
 }

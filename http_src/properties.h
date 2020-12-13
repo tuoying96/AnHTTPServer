@@ -90,7 +90,6 @@ bool storeProperties(const char* propFile, Properties* props);
  * @return number of properties read
  */
 int loadProperties(const char* propFile, Properties* props);
-
 /**
  * Convert properties to null-terminated array
  * of property name/value strings.

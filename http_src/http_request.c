@@ -43,20 +43,18 @@ void process_request(int sock_fd) {
 	if (fgets(request, MAXBUF, stream) == NULL) {
 		return;
 	}
+	
 	// eliminate newline from request
 	trim_newline(request);
-
 	// initialize request headers
 	Properties *responseHeaders = newProperties();
 	// name of server
 	putProperty(responseHeaders, "Server", server.server_name);
-
 	// date and time of this response
 	time_t timer;
 	time(&timer); // need to get local file time?
 	putProperty(responseHeaders,"Date",
 				milliTimeToRFC_1123_Date_Time(timer, buf));
-
 
 	// parse header
 	if (sscanf(request, "%s %s %s", method, encUri, version) != 3) {
@@ -102,7 +100,6 @@ void process_request(int sock_fd) {
 	// delete headers
 	deleteProperties(requestHeaders);
 	deleteProperties(responseHeaders);
-
 	// close socket stream
 	fflush(stream);
 	fclose(stream);

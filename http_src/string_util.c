@@ -63,3 +63,16 @@ bool trim_newline(char *src) {
 	}
 	return false;
 }
+
+/**
+ * Trims trailing spaces.
+ *
+ * @param src source string
+ * @return dst dest string
+ */
+char * trim_trailing_tabs(char *src) {
+    while(*src == '\t') {
+        src++;
+    }
+    return src;
+}
