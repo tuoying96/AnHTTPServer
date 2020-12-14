@@ -16,7 +16,8 @@
 #include "string_util.h"
 #include "http_server.h"
 #include "file_util.h"
-
+#include "properties.h"
+extern Properties* mediaTypeProperty;
 /** default media type */
 static const char *DEFAULT_MEDIA_TYPE = "application/octet-stream";
 
@@ -47,37 +48,58 @@ char *getMediaType(const char *filename, char *mediaType)
     strlower(ext, ext);
 
     // media type sting for extension
-    const char *mtstr;
-
-    // hash on first char?
-    switch (*ext) {
-    case 'c':
-        if (strcmp(ext, "css") == 0) { mtstr = "text/css"; }
-        break;
-    case 'g':
-        if (strcmp(ext, "gif") == 0) { mtstr = "image/gif"; }
-        break;
-    case 'h':
-        if (strcmp(ext, "html") == 0 || strcmp(ext, "htm") == 0) { mtstr = "text/html"; }
-        break;
-    case 'i':
-        if (strcmp(ext, "ico") == 0) { mtstr = "image/vnd.microsoft.icon"; }
-        break;
-    case 'j':
-    	if (strcmp(ext, "jpeg") == 0 || strcmp(ext, "jpg") == 0) { mtstr = "image/jpg"; }
-    	else if (strcmp(ext, "js") == 0) { mtstr = "application/javascript"; }
-    	else if (strcmp(ext, "json") == 0) { mtstr = "application/json"; }
-    	break;
-    case 'p':
-        if (strcmp(ext, "png") == 0) { mtstr = "image/png"; }
-        break;
-    case 't':
-    	if (strcmp(ext, "txt") == 0) { mtstr = "text/plain"; }
-    	break;
-    default:
-    	mtstr = DEFAULT_MEDIA_TYPE;
+    char mtstr[MAX_PROP_VAL];
+    if (findProperty(mediaTypeProperty, 0, ext, mtstr) == SIZE_MAX) {
+        strcpy(mtstr, DEFAULT_MEDIA_TYPE);
     }
-
     strcpy(mediaType, mtstr);
     return mediaType;
+}
+
+/**
+ * Load the file extension to media type mapping from config file
+ *
+ * @param configFileName the name of the configuration file
+ * @return the number of properties loaded
+ */
+int readMediaTypes(char* configFileName) {
+    if (mediaTypeProperty == NULL) {
+        mediaTypeProperty = newProperties();
+    }
+    FILE* propStream = fopen(configFileName, "r");
+    if (propStream == NULL) {
+        return 0;
+    }
+    char buf[MAXBUF];
+    int nprops = 0;
+
+    // get next line
+    while (fgets(buf, MAXBUF, propStream) != NULL) {
+        if (buf[0] == '#') { // ignore comment
+            continue;
+        }
+        char *valp = strchr(buf, '\t');
+        if (valp != NULL) {
+            //
+            *valp++ = '\0';
+            valp = trim_trailing_tabs(valp);
+            // trim newline characters
+            trim_newline(valp);
+            while(1) {
+                char *valpp = strchr(valp, ' ');
+                if (valpp == NULL) {
+                    putProperty(mediaTypeProperty, valp, buf);
+                    nprops++;
+                    break;
+                }
+                *valpp++ = '\0';
+                putProperty(mediaTypeProperty, valp, buf);
+                valp = valpp;
+                nprops++;
+            }
+        }
+    }
+    fclose(propStream);
+    return nprops;
+
 }

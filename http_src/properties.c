@@ -30,7 +30,7 @@ typedef struct Properties {
  * @return a new properties
  */
 Properties* newProperties() {
-	Properties* props = malloc(sizeof(Properties));
+    Properties* props = malloc(sizeof(Properties));
 	props->props = newVArray(sizeof(Property), 4);
 	return props;
 }

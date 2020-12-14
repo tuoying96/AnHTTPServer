@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/http_server.dir/http_src/string_util.c.o"
   "CMakeFiles/http_server.dir/http_src/time_util.c.o"
   "CMakeFiles/http_server.dir/http_src/varray.c.o"
+  "CMakeFiles/http_server.dir/thpool_src/thpool.c.o"
   "http_server"
   "http_server.pdb"
 )

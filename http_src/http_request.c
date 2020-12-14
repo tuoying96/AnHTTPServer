@@ -18,7 +18,6 @@
 #include "http_server.h"
 #include "http_codes.h"
 
-
 /**
  *  Process an http request.
  *  @param sock_fd the socket descriptor
@@ -43,20 +42,18 @@ void process_request(int sock_fd) {
 	if (fgets(request, MAXBUF, stream) == NULL) {
 		return;
 	}
+	
 	// eliminate newline from request
 	trim_newline(request);
-
 	// initialize request headers
 	Properties *responseHeaders = newProperties();
 	// name of server
 	putProperty(responseHeaders, "Server", server.server_name);
-
 	// date and time of this response
 	time_t timer;
 	time(&timer); // need to get local file time?
 	putProperty(responseHeaders,"Date",
 				milliTimeToRFC_1123_Date_Time(timer, buf));
-
 
 	// parse header
 	if (sscanf(request, "%s %s %s", method, encUri, version) != 3) {
@@ -95,6 +92,15 @@ void process_request(int sock_fd) {
 		do_get(stream, uri, requestHeaders, responseHeaders);
 	} else 	if (strcasecmp(method, "HEAD") == 0) {
 		do_head(stream, uri, requestHeaders, responseHeaders);
+    }
+    else if (strcasecmp(method, "DELETE") == 0) {
+        do_delete(stream, uri, requestHeaders, responseHeaders);
+    }
+    else if (strcasecmp(method, "PUT") == 0) {
+        do_put(stream, uri, requestHeaders, responseHeaders);
+    }
+    else if (strcasecmp(method, "POST") == 0) {
+        do_post(stream, uri, requestHeaders, responseHeaders);
 	} else {
 		sendStatusResponse(stream, Http_NotImplemented, NULL, responseHeaders);
 	}
@@ -102,7 +108,6 @@ void process_request(int sock_fd) {
 	// delete headers
 	deleteProperties(requestHeaders);
 	deleteProperties(responseHeaders);
-
 	// close socket stream
 	fflush(stream);
 	fclose(stream);

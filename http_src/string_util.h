@@ -38,5 +38,5 @@ bool strendswith(const char *src, const char *endswith);
  * @return true if string was trimmed
  */
 bool trim_newline(char *src);
-
+char * trim_trailing_tabs(char *src);
 #endif /* STRING_UTIL_H_ */

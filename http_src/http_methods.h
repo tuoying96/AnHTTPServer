@@ -36,3 +36,36 @@ void do_head(FILE *stream, const char *uri, Properties *requestHeaders, Properti
 
 
 #endif /* HTTP_METHODS_H_ */
+
+/**
+ * Handle HEAD request.
+ *
+ * @param the socket stream
+ * @param uri the request URI
+ * @param requestHeaders the request headers
+ * @param responseHeaders the response headers
+ */
+void do_delete(FILE *stream, const char *uri, Properties *requestHeaders, Properties *responseHeaders);
+
+
+/**
+ * Handle HEAD request.
+ *
+ * @param the socket stream
+ * @param uri the request URI
+ * @param requestHeaders the request headers
+ * @param responseHeaders the response headers
+ */
+void do_put(FILE *stream, const char *uri, Properties *requestHeaders, Properties *responseHeaders);
+
+
+
+/**
+ * Handle HEAD request.
+ *
+ * @param the socket stream
+ * @param uri the request URI
+ * @param requestHeaders the request headers
+ * @param responseHeaders the response headers
+ */
+void do_post(FILE *stream, const char *uri, Properties *requestHeaders, Properties *responseHeaders);
