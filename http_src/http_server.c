@@ -23,7 +23,7 @@
 #include <pthread.h>
 #include "../thpool_src/thpool.h"
 
-#define THREAD_POOL_SIZE  20
+#define THREAD_POOL_SIZE  10
 #define DEFAULT_HTTP_PORT 8080
 
 /** http server configuration */
@@ -156,6 +156,12 @@ int main(int argc, char* argv[argc]) {
 		fprintf(stderr, "HttpServer running on port %d\n", server.server_port);
 	}
 
+	// create thread pool
+    struct thpool_* pool = thpool_init(THREAD_POOL_SIZE);
+    fprintf( stderr, "Pool started with %d threads ", THREAD_POOL_SIZE );
+
+
+
 	while (true) {
         // accept client connection
 		int socket_fd = accept_peer_connection(listen_sock_fd);
@@ -169,10 +175,19 @@ int main(int argc, char* argv[argc]) {
 				fprintf(stderr, "New connection accepted  %s:%u\n", host, port);
 			}
 		}
+		// add jobs to thread pool
+        if ( thpool_add_work(pool, &process_request, (void*)&socket_fd) != 0 ){
+            printf( "Job add error." );
+        }
+        // int thpool_add_work(thpool_* thpool_p, void (*function_p)(void*), void* arg_p)
+
 
 		// handle request
-		process_request(socket_fd);
+		// process_request(socket_fd);
     }
+
+    // destroy the threadpool
+    thpool_destroy(pool);
 
     // close listener socket
     close(listen_sock_fd);
