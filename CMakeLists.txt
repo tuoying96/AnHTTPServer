@@ -6,6 +6,7 @@ set(CMAKE_C_STANDARD 11)
 # project include directories
 include_directories(http_src)
 include_directories(thpool_src)
+include_directories(/usr/include)
 
 # project source directories
 aux_source_directory(http_src http_src)
