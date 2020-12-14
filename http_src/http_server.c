@@ -176,7 +176,8 @@ int main(int argc, char* argv[argc]) {
 			}
 		}
 		// add jobs to thread pool
-        if ( thpool_add_work(pool, &process_request, (void*)&socket_fd) != 0 ){
+        // handle request
+        if ( thpool_add_work(pool, (void*)process_request, (void*)socket_fd) != 0 ){
             printf( "Job add error." );
         }
         // int thpool_add_work(thpool_* thpool_p, void (*function_p)(void*), void* arg_p)
