@@ -17,9 +17,6 @@
 #include "time_util.h"
 #include "http_server.h"
 #include "http_codes.h"
-#include <pthread.h>
-#include "../thpool_src/thpool.h"
-
 
 /**
  *  Process an http request.
@@ -95,6 +92,15 @@ void process_request(int sock_fd) {
 		do_get(stream, uri, requestHeaders, responseHeaders);
 	} else 	if (strcasecmp(method, "HEAD") == 0) {
 		do_head(stream, uri, requestHeaders, responseHeaders);
+    }
+    else if (strcasecmp(method, "DELETE") == 0) {
+        do_delete(stream, uri, requestHeaders, responseHeaders);
+    }
+    else if (strcasecmp(method, "PUT") == 0) {
+        do_put(stream, uri, requestHeaders, responseHeaders);
+    }
+    else if (strcasecmp(method, "POST") == 0) {
+        do_post(stream, uri, requestHeaders, responseHeaders);
 	} else {
 		sendStatusResponse(stream, Http_NotImplemented, NULL, responseHeaders);
 	}

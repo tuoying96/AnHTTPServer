@@ -20,7 +20,10 @@
 #include "properties.h"
 #include "http_server.h"
 #include "media_util.h"
+#include <pthread.h>
+#include "../thpool_src/thpool.h"
 
+#define THREAD_POOL_SIZE  20
 #define DEFAULT_HTTP_PORT 8080
 
 /** http server configuration */

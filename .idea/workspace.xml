@@ -103,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607822795317</updated>
-      <workItem from="1607822797060" duration="7156000" />
+      <workItem from="1607822797060" duration="14864000" />
     </task>
     <servers />
   </component>
@@ -111,10 +111,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="410" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1607877259945">
+    <state x="570" y="352" width="670" height="676" key="search.everywhere.popup" timestamp="1607911734112">
       <screen x="59" y="25" width="1381" height="875" />
     </state>
-    <state x="1928" y="253" width="932" height="816" key="search.everywhere.popup/59.25.1381.875/1440.25.1920.1055@1440.25.1920.1055" timestamp="1607839585172" />
-    <state x="410" y="214" width="670" height="676" key="search.everywhere.popup/59.25.1381.875/1440.25.1920.1055@59.25.1381.875" timestamp="1607877259945" />
+    <state x="1928" y="253" width="932" height="816" key="search.everywhere.popup/59.25.1381.875/1440.25.1920.1055@1440.25.1920.1055" timestamp="1607889238755" />
+    <state x="570" y="352" width="670" height="676" key="search.everywhere.popup/59.25.1381.875/1440.25.1920.1055@59.25.1381.875" timestamp="1607911734112" />
   </component>
 </project>
