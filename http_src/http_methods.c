@@ -35,6 +35,16 @@
  * @param buf the string buffer to hold html content
  */
 static void dir_content(const char *path, char *buf) {
+    // Replace content base with /.
+    char pathCopy[MAXBUF];
+    char pathName[MAXBUF];
+    sprintf(pathName,"/");
+    strcpy(pathCopy, path);
+    char *token = strtok(pathCopy, "/");
+    while( token != NULL ) {
+        token = strtok(NULL, "/");
+        if (token != NULL) sprintf(pathName, "%s%s/", pathName, token);
+    }
     sprintf(buf, "<html>\n"
                  "<head>\n"
                  "  <title>index of %s</title>\n"
@@ -51,7 +61,7 @@ static void dir_content(const char *path, char *buf) {
                  "  </tr>\n"
                  "  <tr>\n"
                  "    <td colspan=\"5\"><hr></td>\n"
-                 "  </tr>", path, path); // TODO: remove the top directory
+                 "  </tr>", pathName, pathName);
     DIR *dp = opendir(path);
     struct dirent *ep;
     while (ep = readdir (dp)) {
@@ -62,7 +72,7 @@ static void dir_content(const char *path, char *buf) {
         if (ep->d_type == DT_DIR) {
             sprintf(link, "%s/", ep->d_name);
             if (strcmp(ep->d_name, "..")==0) {
-                if (strcmp(path, "content/")==0) {
+                if (strcmp(pathName, "/")==0) {
                     continue;
                 } else {
                     sprintf(td, "&#x23ce");
@@ -150,7 +160,7 @@ static void do_get_or_head(FILE *stream, const char *uri, Properties *requestHea
 	// directory path ends with '/'
 	if (S_ISDIR(sb.st_mode) && strendswith(filePath, "/")) {
 		// not allowed for this method
-        do_dir(stream, filePath, requestHeaders, responseHeaders, sendContent);
+		do_dir(stream, filePath, requestHeaders, responseHeaders, sendContent);
 		return;
 	} else if (!S_ISREG(sb.st_mode)) { // error if not regular file
 		sendStatusResponse(stream, Http_NotFound, NULL, responseHeaders);
@@ -212,154 +222,4 @@ void do_get(FILE *stream, const char *uri, Properties *requestHeaders, Propertie
  */
 void do_head(FILE *stream, const char *uri, Properties *requestHeaders, Properties *responseHeaders) {
 	do_get_or_head(stream, uri, requestHeaders, responseHeaders, false);
-}
-
-/**
- * Handle HEAD request.
- *
- * @param the socket stream
- * @param uri the request URI
- * @param requestHeaders the request headers
- * @param responseHeaders the response headers
- */
-void do_delete(FILE *stream, const char *uri, Properties *requestHeaders, Properties *responseHeaders) {
-    // get path to URI in file system
-    char filePath[MAXPATHLEN];
-    resolveUri(uri, filePath);
-
-    // ensure file exists
-    struct stat sb;
-    if (stat(filePath, &sb) != 0) {
-        sendStatusResponse(stream, Http_NotFound, NULL, responseHeaders);
-        return;
-    }
-    // directory path ends with '/'
-    if (S_ISDIR(sb.st_mode) && strendswith(filePath, "/")) {
-        DIR* dir = opendir(filePath);
-        int count = 0;
-        struct dirent *entry;
-        while((entry = readdir(dir))!=NULL)  {
-            ++count;
-        }
-        closedir(filePath);
-        if (count == 2) {
-            //delete directory
-            rmdir(filePath);
-            sendStatusResponse(stream, Http_OK, NULL, responseHeaders);
-            return;
-        }
-        else {
-            // not empty directory, not allowed for this method
-            sendStatusResponse(stream, Http_MethodNotAllowed, NULL, responseHeaders);
-            return;
-        }
-    } else if (!S_ISREG(sb.st_mode)) { // error if not regular file
-        sendStatusResponse(stream, Http_NotFound, NULL, responseHeaders);
-        return;
-    } else {
-        //delete file
-        remove(filePath);
-        sendStatusResponse(stream, Http_OK, NULL, responseHeaders);
-    }
-}
-
-
-/**
- * Handle HEAD request.
- *
- * @param the socket stream
- * @param uri the request URI
- * @param requestHeaders the request headers
- * @param responseHeaders the response headers
- */
-void do_put(FILE *stream, const char *uri, Properties *requestHeaders, Properties *responseHeaders) {
-    // get path to URI in file system
-    char filePath[MAXPATHLEN];
-    resolveUri(uri, filePath);
-
-    char buf[MAXBUF];
-    FILE* contentStream;
-    // ensure file exists
-    struct stat sb;
-    if (stat(filePath, &sb) == 0) {
-        putProperty(responseHeaders,"Location", filePath);
-        contentStream = fopen(filePath, "r");
-        if (contentStream == NULL) {
-            sendStatusResponse(stream, Http_MethodNotAllowed, NULL, responseHeaders);
-        } else {
-            sendStatusResponse(stream, Http_Created, NULL, responseHeaders);
-        }
-        fclose(contentStream);
-        return;
-    } else {
-        contentStream = fopen(filePath, "w");
-        if (contentStream == NULL) {
-            sendStatusResponse(stream, Http_MethodNotAllowed, NULL, responseHeaders);
-        } else{
-            char key[64] = "Length Required";
-            int retIdx = findProperty(requestHeaders, 0, key, buf);
-            if (retIdx == SIZE_MAX) {
-                sendStatusResponse(stream, Http_LengthRequired, NULL, responseHeaders);
-            } else {
-                int bodylen = atoi(buf);
-                if (findProperty(requestHeaders, 0, "Body", buf) != SIZE_MAX) {
-                    fwrite(buf, 1, bodylen, contentStream);
-                    sendStatusResponse(stream, Http_OK, NULL, responseHeaders);
-                }
-            }
-        }
-        fclose(contentStream);
-    }
-}
-
-
-/**
- * Handle HEAD request.
- *
- * @param the socket stream
- * @param uri the request URI
- * @param requestHeaders the request headers
- * @param responseHeaders the response headers
- */
-void do_post(FILE *stream, const char *uri, Properties *requestHeaders, Properties *responseHeaders) {
-    // get path to URI in file system
-    char filePath[MAXPATHLEN];
-
-    char buf[MAXBUF];
-    FILE* contentStream;
-
-    char* p = strchr(filePath, '/');
-    p++;
-    strncpy(buf, filePath, p - filePath );
-    buf[p-filePath] = 0;
-
-    struct stat sb;
-    if (stat(buf, &sb) != 0) {
-        mkdir(buf,  0777);
-    }
-
-    if (stat(filePath, &sb) == 0) {
-        contentStream = fopen(filePath, "w");
-        putProperty(responseHeaders,"Location", filePath);
-        sendStatusResponse(stream, Http_Created, NULL, responseHeaders);
-        fclose(contentStream);
-    }
-
-    contentStream = fopen(filePath, "r");
-    if (contentStream == NULL) {
-        sendStatusResponse(stream, Http_MethodNotAllowed, NULL, responseHeaders);
-    } else {
-        char key[64] = "Length Required";
-        int retIdx = findProperty(requestHeaders, 0, key, buf);
-        if (retIdx == SIZE_MAX) {
-            sendStatusResponse(stream, Http_LengthRequired, NULL, responseHeaders);
-        } else {
-            int bodylen = atoi(buf);
-            if (findProperty(requestHeaders, 0, "Body", buf) != SIZE_MAX) {
-                fwrite(buf, 1, bodylen, contentStream);
-                sendStatusResponse(stream, Http_OK, NULL, responseHeaders);
-            }
-        }
-    }
-    fclose(contentStream);
 }
